@@ -1,5 +1,8 @@
-.navbar{
-    background-color: red;
+body{
+  background-image: url("image.jpg")   ;
+}
+nav{
+    background-color: rgb(28 28 28);
 }
 .horizontal-list{
     overflow: auto;
@@ -7,15 +10,25 @@
 .horizontal-list li{
     float: left;
     list-style: none;
-    margin:3px 3px;
+    margin:10px 50px;
 }
 .horizontal-list li a{
-    padding: 3px 3px;
+    padding: 3% 50%;
     text-decoration: none;
     color:white;
 }
  #search input {
-    border: 2px solid green;
+    border: 2px solid black;
     border-radius: 10px;
     padding: 3px 4px;
+}
+img#img-icon{
+    width:40px;
+    height: 40px;
+}
+img#profileImage{
+    width: 60px;
+    height:50px;
+    border-radius:50%;
+
 }
