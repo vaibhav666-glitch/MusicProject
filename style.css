@@ -1,34 +1,89 @@
 body{
   background-image: url("image.jpg")   ;
+  position: fixed;
 }
 nav{
     background-color: rgb(28 28 28);
 }
 .horizontal-list{
     overflow: auto;
+    padding-left: 0px;
+    margin: 0px;
+    
+    
 }
 .horizontal-list li{
     float: left;
     list-style: none;
-    margin:10px 50px;
+    margin:3px 50px;
+    font-weight: 100;
+    font-size:1rem;
 }
 .horizontal-list li a{
-    padding: 3% 50%;
+   
     text-decoration: none;
     color:white;
 }
- #search input {
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 3px 4px;
+
+
+form{
+    background-color: white;
+    margin-left: 400px;
+    border-radius: 5px;
 }
+
+ input#search {
+    background-color: transparent;
+    border: 0px solid;
+    border: none;
+    
+}
+#search-icon{
+    margin:5px ;
+    background-color: transparent;
+    border: none;
+    
+}
+span#mic{
+    margin-right: 10px;
+}
+
 img#img-icon{
     width:40px;
     height: 40px;
 }
 img#profileImage{
     width: 60px;
-    height:50px;
-    border-radius:50%;
+    height: 50px;
+    border-radius: 50%;
+
+}
+#slider{
+    margin:0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+}
+#slider input[type=radio]{
+    display: none;
+
+}
+#slider label{
+    cursor: pointer;
+    text-decoration: none;
+}
+#slides{
+    padding: 30px;
+    border: 3px solid #ccc ;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+
+}
+#overflow{
+    width: 100%;
+    overflow: hidden;
+}
+#slider1:checked ~ #slides .inner{
 
 }
