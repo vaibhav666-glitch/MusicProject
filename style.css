@@ -56,34 +56,14 @@ img#profileImage{
     width: 60px;
     height: 50px;
     border-radius: 50%;
-
 }
-#slider{
-    margin:0 auto;
-    width: 800px;
-    max-width: 100%;
-    text-align: center;
-}
-#slider input[type=radio]{
-    display: none;
-
-}
-#slider label{
-    cursor: pointer;
-    text-decoration: none;
-}
-#slides{
-    padding: 30px;
-    border: 3px solid #ccc ;
-    background: #fff;
+.container{
     position: relative;
-    z-index: 1;
+}
+.container .wrapper{
+    width: 50vw;
+    height: 55vh;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.6);
+    margin: 1rem 0rem 0rem 5rem;
+}
 
-}
-#overflow{
-    width: 100%;
-    overflow: hidden;
-}
-#slider1:checked ~ #slides .inner{
-
-}
