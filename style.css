@@ -1,35 +1,40 @@
-body{
-  background-image: url("image.jpg")   ;
+#header{
+    height: 100%;
+    width: 100%;
+  background-image: url("image.jpg");
   position: fixed;
+  background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    padding-top:1.2rem;
 }
-nav{
-    background-color: rgb(28 28 28);
-}
+
+
 .horizontal-list{
-    overflow: auto;
-    padding-left: 0px;
-    margin: 0px;
-    
-    
+	list-style:none;
+    padding:10px;
+    margin:10px;
+    text-align: center;
+    display:flex;
 }
 .horizontal-list li{
-    float: left;
-    list-style: none;
-    margin:3px 50px;
+    
+    margin: 0px 58px 8px 0px;
     font-weight: 100;
-    font-size:1rem;
+    font-size:0.9rem;
 }
-.horizontal-list li a{
-   
+.horizontal-list li a {
+    color: white;
     text-decoration: none;
-    color:white;
+    
 }
 
 
 form{
     background-color: white;
-    margin-left: 400px;
-    border-radius: 5px;
+    margin-left:20%;
+    border-radius: 3px;
+    margin-bottom: 0%;
 }
 
  input#search {
@@ -65,5 +70,54 @@ img#profileImage{
     height: 55vh;
     box-shadow: 5px 5px 20px rgba(0,0,0,0.6);
     margin: 1rem 0rem 0rem 5rem;
+    overflow: hidden;
+}
+.container .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 10s ease-in-out infinite ;
+}
+.container #slider-img-1 img{
+    width:100%;
+    height:100%;   
+}
+.container #slider-img-2 img{
+    width:100%;
+    height:100%;
+}
+.container #slider-img-3 img{
+    width:100%;
+    height:100%;
 }
 
+
+
+.container .button-holder .button{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+
+}
+.container .button-holder{
+    position: absolute;
+    left: 30%;
+    bottom: 0%;
+
+}
+@keyframes slider {
+    0%{transform: translate(0%);}
+    5%{transform: translate(0%);}
+    15%{transform: translate(-100%);}
+    30%{transform: translate(-100%);}
+    45%{transform: translate(-200%);}
+    60%{transform: translate(-200%);}
+    75%{transform: translate(-100%);}
+    90%{transform: translate(-100%);}
+    105%{transform: translate(0%);}
+    120%{transform: translate(0%);}
+}
